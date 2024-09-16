@@ -1,6 +1,7 @@
 package BasePack;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.bidi.log.Log;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +22,7 @@ public class BaseClass {
     FileInputStream inputStream;
 
     public void initialBaseSetup(String browser) {
+        System.out.println("initialBaseSetup");
         switch (browser.toLowerCase()) {
             case "edge":
                 driver = new EdgeDriver();
