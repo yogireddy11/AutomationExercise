@@ -45,6 +45,10 @@ public class VerifyLoginPage {
         assertEquals(registerWithLoginPage.verifyShoppingPage(),"Bhaai");
     }
     @Test(priority = 5)
+    public void addToGitHub(){
+
+    }
+    @Test(priority = 5)
     public void verifyLogout(){
         registerUserPage.logoutFromCurrentACC();
     }
